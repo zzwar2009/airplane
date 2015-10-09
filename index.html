@@ -23,11 +23,29 @@
     margin: auto;
     border: 1px solid black;
   }
+  div{
+    margin:20px;
+  }
+  span{
+    display: inline-block;
+    padding:8px 10px;
+    border: 1px solid #fececf;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #1EDC2B;
+    color:#fff;
+  }
   </style>
 </head>
 <body>
   <canvas id="stage" width="480" height="852"></canvas>
   <script src="create.js"></script>
   <script src="app.js"></script>
+  <div><span id='init' onclick = "init()">初始化界面</span>
+  <span id='start' onclick = "start()">开始</span>
+  <span id='pause' onclick = "pause()">暂停</span>
+  <span id='end' onclick = "end()">结束</span>
+</div>
 </body>
 </html>
