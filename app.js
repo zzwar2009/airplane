@@ -173,6 +173,7 @@ function pause(){
 
 	//结束按钮事件
 	gameoverBtn.addEventListener("click", function(evt){
+		stage.removeChild(gameoverBtn,againBtn,continueBtn,timetxt,sky,scoretxt)
 		end(false);
 	});
 
@@ -182,7 +183,7 @@ function pause(){
 //结束
 function end(failure){
 	//清除上一屏幕所有元素
-	stage.removeAllChildren();
+	//stage.removeAllChildren();
 	createjs.Ticker.removeEventListener("tick", tick);
 	gameoverbg = new createjs.Shape();
 	var gameoverbgImg = loader.getResult("game_overbg");
